@@ -1,7 +1,8 @@
 //-------------- IMPORT ----------------------
 import "dotenv/config.js";
+import cors from "cors";
 import express from "express";
-import postsRouter from "./routes/postsRouter.js";
+
 import dishesRouter from "./routes/dishesRouter.js";
 import ordersRouter from "./routes/ordersRouter.js";
 import "./db/mongoose.js";
@@ -11,10 +12,15 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //------------ MIDDLEWARES -------------------
+const corsConfig = {
+  credentials: true,
+  origin: true,
+};
+app.use(cors(corsConfig));
 app.use(express.json());
 
 //------------ ROUTE MIDDLEWARES -------------
-app.use("/posts", postsRouter);
+
 app.use("/api/dishes", dishesRouter);
 app.use("/api/orders", ordersRouter);
 

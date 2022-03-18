@@ -10,6 +10,7 @@ export const getAllOrders = asyncHandler(async (req, res) => {
 //--------- CREATE ORDER -----------------
 export const createOrder = asyncHandler(async (req, res) => {
   const { body } = req;
+  console.log(body);
   const newOrder = await Order.create(body);
   res.status(201).json(newOrder);
 });

@@ -2,16 +2,24 @@ import mongoose from "mongoose";
 const { Schema, model } = mongoose;
 
 const orderSchema = new Schema({
-  dish_name: {
+  name: {
     type: String,
     required: true,
   },
-  dish_price: {
+  email: {
     type: String,
     required: true,
   },
-  dish_category: {
+  phone: {
     type: String,
+    required: true,
+  },
+  time: {
+    type: String,
+    required: true,
+  },
+  order: {
+    type: Array,
     required: true,
   },
 });
