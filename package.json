@@ -1,0 +1,29 @@
+{
+  "name": "pizzaria-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-burger/La-Pizzaria-Grande-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-burger/La-Pizzaria-Grande-Backend/issues"
+  },
+  "homepage": "https://github.com/d-burger/La-Pizzaria-Grande-Backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "kill-port": "^1.6.1",
+    "nodemon": "^2.0.15"
+  }
+}
