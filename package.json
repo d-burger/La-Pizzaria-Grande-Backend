@@ -20,7 +20,8 @@
   "homepage": "https://github.com/d-burger/La-Pizzaria-Grande-Backend#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
   },
   "devDependencies": {
     "kill-port": "^1.6.1",
